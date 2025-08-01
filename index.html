@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DASH Group of Institutions</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<!-- Floating Buttons -->
+<style>
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .floating-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center;
+  }
+
+  .floating-buttons button:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+  }
+
+
+.open-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.open-button:hover {
+  background-color: #0056b3;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 90%;
+  max-width: 480px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  margin-bottom: 12px;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.phone-field {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-field select {
+  width: 30%;
+}
+.phone-field input {
+  width: 70%;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+   body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .floating-buttons button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px 18px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Popup form container */
+    .popup-form {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-width: 420px;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 2000;
+    }
+
+    .popup-form h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .popup-form input,
+    .popup-form select,
+    .popup-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .popup-form button.submit-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .popup-form .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Optional dark background overlay */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      display: none;
+      z-index: 1500;
+    }
+      .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .action-buttons a {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .action-buttons a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+</style>
+
+</style>
+
+</style>
+<body>
+
+  <!-- Floating buttons -->
+  <div class="floating-buttons">
+    <button onclick="openPopup()">📍 We Are Here</button>
+    <button onclick="alert('Open Call Back Form')">📞 Request a Call Back</button>
+  </div>
+
+  <!-- Dark background overlay -->
+  <div class="popup-overlay" id="popupOverlay" onclick="closePopup()"></div>
+
+  <!-- Popup Contact Form -->
+  <div class="popup-form" id="popupForm">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <h2>We Are Here</h2>
+<p style="
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+">
+  Please fill out the form below to start chatting with the next available agent.
+</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Name" required />
+
+      <div style="display: flex; gap: 10px;">
+        <select name="code" required>
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+        </select>
+        <input type="tel" name="phone" placeholder="Phone" required />
+      </div>
+
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="address" placeholder="Address" required />
+      <textarea name="query" placeholder="Your Query" required></textarea>
+
+      <button type="submit" class="submit-btn">Start Chat</button>
+    </form>
+  </div>
+
+
+  
+
+
+<div class="floating-buttons">
+  
+  <button onclick="openPopup()">📍 We Are Here</button>
+  <button onclick="alert('Open Call Back Form')">📞 Request a Call Back</button>
+</div>
+
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <span><i class="fa fa-envelope"></i> info@dashskilledutrain.com</span>
+    <span><i class="fa fa-phone"></i> +91 9829034933</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">DASH</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Courses ▾</a>
+        <div class="dropdown-content">
+          <a href="short-term.html">Short Term</a>
+          <a href="career.html">Career</a>
+          <a href="university.html">University</a>
+        </div>
+      
+
+      </li>
+      <li class="dropdown">
+        <a href="#">Verticals ▾</a>
+        <div class="dropdown-content">
+          <a href="disha-foundation.html">Disha Foundation</a>
+          <a href="aryan-technology.html">Aryan Technology</a>
+          <a href="Dash Skill Edutrain.html">Dash Skill Edutrain</a>
+        </div>
+      </li>
+      <li><a href="placement.html">Placement</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+    </ul>
+    <div class="action-buttons">
+    <a href="rkcl.html">RKCL</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="apply.html">Apply</a>
+  </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <h1>PHP, JavaScript, MySQL, ASP.NET</h1>
+    <p>E-commerce, Graphics Design, Network Security</p>
+  </header>
+<!-- Who We Are Section -->
+<section style="padding: 60px 20px; background: #f9f9f9; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+
+    <!-- Image Column -->
+    <div style="flex: 1 1 350px; text-align: center;">
+      <img src="IMG_20240818_101652_308.jpg" alt="DASH Info Tech Team"
+        style="width: 100%; max-width: 350px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Content Column -->
+    <div style="flex: 2 1 600px;">
+      <h2 style="color: #005bab; margin-bottom: 20px; font-size: 32px;">Who We Are</h2>
+      <p style="color: #444; line-height: 1.8; text-align: justify;">
+        <strong>DASH Info Tech</strong> is a leading IT organization working with a vision to build an IT alliance for global change that would empower youth for development. Since 1997 (Reg. No. 13/05/97), DASH has been delivering short-term skill and long-term vocational training programs across government, private, and corporate sectors.
+        <br><br>
+        Partnering with <strong>APTECH Ltd</strong> since inception, DASH has trained over <strong>25,000 students at its own campuses</strong> and <strong>1.5 lakh+ via channel partners</strong> in Rajasthan and Uttar Pradesh. Courses have been successfully delivered in cities like Bharatpur, Karauli, Dholpur, Udaipur, Jaipur, Bijnor, Moradabad, and Dehradun.
+        <br><br>
+        We are an authorized <strong>Service Provider (SP) of RKCL</strong>, facilitating 125+ IT Gyan Kendras for implementing various government-sponsored IT programs.
+        <br><br>
+        As part of our <strong>CSR efforts with DISHA Foundation</strong>, we work across districts in Rajasthan and U.P. to uplift youth via skill and livelihood training programs. Notable projects include:
+        <ul style="padding-left: 20px; margin-top: 10px;">
+          <li>SECC-11 Census (covered over 1 crore population)</li>
+          <li>National Population Register project in UP</li>
+          <li>Trained 1200+ youth with RSLDC (Govt. of Rajasthan)</li>
+          <li>BPL Census-2002 and EDP/ESDP programs for SC/ST & BPL students</li>
+          <li>Strong placement network with IT and ITES firms</li>
+        </ul>
+        <br>
+        <strong>Geographical Reach:</strong> Rajasthan, Uttar Pradesh, Uttarakhand, Chhattisgarh, and Odisha.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Testimonials -->
+<section class="testimonial-section" style="background-color: #010901f8; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+  <div class="testimonial-box" id="testimonial-box" style="max-width: 700px; margin: auto; background: #241c1c; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); padding: 40px; text-align: center;">
+    <p class="testimonial-quote" id="quote" style="font-size: 20px; font-style: italic; color: #ccd5d4; margin-bottom: 30px;">
+      “Dash Infotech has enhanced my technical skills. A very co-operative & friendly placement cell.”
+    </p>
+    <img src="student1.jpg" alt="Student" class="testimonial-img" id="photo" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 4px solid #4CAF50; margin-bottom: 15px;"/>
+    <div class="testimonial-name" id="name" style="font-weight: 600; font-size: 18px; color: #000;">Harsh Goyal</div>
+    <div class="testimonial-role" id="role" style="font-size: 14px; color: #4CAF50;">Student</div>
+    <div class="dots" style="margin-top: 20px;">
+      <span class="dot active" onclick="showTestimonial(0)" style="height: 12px; width: 12px; margin: 0 4px; background-color: #4CAF50; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+      <span class="dot" onclick="showTestimonial(1)" style="height: 12px; width: 12px; margin: 0 4px; background-color: #0c0b0b; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+      <span class="dot" onclick="showTestimonial(2)" style="height: 12px; width: 12px; margin: 0 4px; background-color: #020000df; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+    </div>
+  </div>
+</section>
+<!-- FOOTER Section -->
+<section style="background-color: #1e1e1e; color: #ccc; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+    <!-- INFORMATION -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 20px; color: #f7c948;">INFORMATION</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Downloads</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Placement</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- USEFUL LINKS -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 20px; color: #f7c948;">USEFUL LINKS</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Computer Trainings</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Experience & Association</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Events & Activities</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">Partners & Associates</a></li>
+      </ul>
+    </div>
+
+    <!-- HEAD OFFICE -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="margin-bottom: 20px; color: #f7c948;">REGD & HEAD OFFICE</h3>
+      <p>168 – Krishna Nagar, Bharatpur<br>Pin: 321001, Rajasthan (India)</p>
+    </div>
+
+    <!-- CORP OFFICE -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="margin-bottom: 20px; color: #f7c948;">CORP. OFFICE</h3>
+      <p>Bajrang Bihar Colony,<br>Kali Bagichi, Bharatpur</p>
+    </div>
+
+    <!-- BRANCH OFFICE -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="margin-bottom: 20px; color: #f7c948;">BRANCH OFFICE</h3>
+      <p>Jaipur, Dehradun, Noida, Moradabad</p>
+      <p>📧 info@dashskilledutrain.com</p>
+      <p>📞 +91 5644-225096 | +91 9829034933</p>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+    <p style="color: #aaa;">© All Right Reserved. Designed & Developed By</p>
+
+    <!-- Vishal Rajput Name with 3D Effect -->
+    <h2 style="
+      color: #f7c948;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 #000, 2px 2px 0 #4CAF50, 3px 3px 5px rgba(0,0,0,0.3);
+      margin-top: 10px;
+    ">
+      Vishal Rajput
+    </h2>
+  </div>
+</section>
+
+
+
+  <!-- Scripts -->
+  <script>
+    const images = ["1.jpg", "2.jpg", "3.jpg"];
+    let current = 0;
+    const hero = document.getElementById("hero");
+    function changeBackground() {
+      hero.style.backgroundImage = `url('${images[current]}')`;
+      hero.style.backgroundSize = "cover";
+      current = (current + 1) % images.length;
+    }
+    changeBackground();
+    setInterval(changeBackground, 4000);
+
+    const testimonials = [
+      {
+        quote: "Dash Infotech has enhanced my technical skills.",
+        name: "Harsh Goyal",
+        role: "Student",
+        photo: "v5.jpg"
+      },
+      {
+        quote: "I feel more confident in my career now.",
+        name: "Rishi Bharadwaj",
+        role: "Student",
+        photo: "v6.jpg"
+      },
+      {
+        quote: "The best part is hands-on training.",
+        name: " Ram Sharma",
+        role: "Student",
+        photo: "v7.jpg"
+      }
+    ];
+
+    let currentIndex = 0;
+    const quoteEl = document.getElementById("quote");
+    const nameEl = document.getElementById("name");
+    const roleEl = document.getElementById("role");
+    const photoEl = document.getElementById("photo");
+    const dots = document.querySelectorAll(".dot");
+
+    function showTestimonial(index) {
+      const t = testimonials[index];
+      quoteEl.textContent = t.quote;
+      nameEl.textContent = t.name;
+      roleEl.textContent = t.role;
+      photoEl.src = t.photo;
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+      currentIndex = index;
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      showTestimonial(currentIndex);
+    }, 5000);
+
+ 
+ function openPopup() {
+      document.getElementById("popupForm").style.display = "block";
+      document.getElementById("popupOverlay").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popupForm").style.display = "none";
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+
+  </script>
+
+</body>
+</html>

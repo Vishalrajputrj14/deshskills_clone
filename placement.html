@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Placement - DASH Infotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+      font-size: 16px;
+    }
+
+ /* Navbar Styles */
+header {
+  background-color: #2f2f2f; /* Dark Gray */
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 10px;
+}
+
+nav a:hover {
+  background-color: #444; /* Light gray on hover */
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2f2f2f;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        width: 100%;
+      }
+    }
+
+    /* Banner */
+    .banner {
+      background: #333;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .breadcrumb {
+      font-size: 14px;
+      color: #a0c4ff;
+    }
+
+    .breadcrumb a {
+      color: #a0c4ff;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Testimonials */
+    .testimonial-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .testimonial {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+
+    .testimonial img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .testimonial-content {
+      flex: 1;
+    }
+
+    .testimonial-content p {
+      margin-bottom: 10px;
+    }
+
+    .testimonial-content strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .testimonial {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .testimonial img {
+        margin-bottom: 10px;
+      }
+
+      .testimonial-content strong {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">DASH Infotech</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="#">Courses ▾</a>
+        <div class="dropdown-content">
+          <a href="short-term.html">Short Term</a>
+          <a href="career.html">Career</a>
+          <a href="university.html">University</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Verticals ▾</a>
+        <div class="dropdown-content">
+          <a href="disha-foundation.html">Disha Foundation</a>
+          <a href="aryan-technology.html">Aryan Technology</a>
+          <a href="Dash Skill Edutrain.html">Dash Skill Edutrain</a>
+        </div>
+      </div>
+
+      <a href="placement.html">Placement</a>
+      <a href="contact.html">Contact</a>
+      <a href="downloads.html">Downloads</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Placement</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> &gt; <span>Placement</span>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonial-container">
+
+    <div class="testimonial">
+      <img src="IMG_20240818_101652_308.jpg" alt="Veerendra Sharma">
+      <div class="testimonial-content">
+        <p>
+          Dash Infotech has enhanced my technical skills & knowledge about programming.
+          I sincerely thank Dash Infotech. A very co-operative & friendly placement cell.
+        </p>
+        <strong>Vishal rajput</strong>
+        <span>Web Designer</span>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="v2.png" alt="Vishnu Sharma">
+      <div class="testimonial-content">
+        <p>
+          Dash Infotech helped me to increase my knowledge. It gave me a clear understanding
+          of IT topics, and also helped me in my academic studies.
+        </p>
+        <strong>Vishnu Sharma</strong>
+        <span>Software Programmer</span>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="v6.jpg" alt="Student">
+      <div class="testimonial-content">
+        <p>
+          It is a good environment to learn the subject in detail. Dash Infotech made me attend
+          the classes regularly and improve my skills.
+        </p>
+        <strong>Ravi Meena</strong>
+        <span>Java Developer</span>
+      </div>
+    </div>
+
+  </div>
+  <!-- Placement Gallery from Screenshot -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin: 40px auto; max-width: 1200px;">
+
+  <!-- Row 1 -->
+  <div style="text-align: center;">
+    <img src="IMG_20240818_101652_308.jpg" alt="Gyan Chand Sharma" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Gyan Chand Sharma</strong><br>Web Designer</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="v7.jpg" alt="Satyendra Sharma" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Satyendra Sharma</strong><br>Lupin Ltd</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="v6.jpg" alt="Gaurav Mishra" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Gaurav Mishra</strong><br>Wipro Infotech</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="v5.jpg" alt="Dharmendra Kumar" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Dharmendra Kumar</strong><br>Aptech Computer Center</p>
+  </div>
+
+  <!-- Row 2 -->
+  <div style="text-align: center;">
+    <img src="v1.png" alt="Student 1" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Unknown</strong><br>Aptech Computer Center</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="v2.png" alt="Student 2" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Unknown</strong><br>Aptech Computer Center</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="v3.png" alt="Student 3" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Unknown</strong><br>Wipro Infotech</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="v3.png" alt="Student 4" style="width: 180px; height: 200px; border-radius: 8px;">
+    <p><strong>Unknown</strong><br>Wipro Infotech</p>
+  </div>
+
+</div>
+
+
+
+
+ <!-- Footer -->
+  <section style="background-color: #1e1e1e; color: #ccc; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+      <!-- INFORMATION -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">INFORMATION</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Downloads</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Placement</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- USEFUL LINKS -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">USEFUL LINKS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Computer Trainings</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Experience & Association</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Events & Activities</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Partners & Associates</a></li>
+        </ul>
+      </div>
+
+      <!-- HEAD OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">REGD & HEAD OFFICE</h3>
+        <p>168 – Krishna Nagar, Bharatpur<br>Pin: 321001, Rajasthan (India)</p>
+      </div>
+
+      <!-- CORP OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">CORP. OFFICE</h3>
+        <p>Bajrang Bihar Colony,<br>Kali Bagichi, Bharatpur</p>
+      </div>
+
+      <!-- BRANCH OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">BRANCH OFFICE</h3>
+        <p>Jaipur, Dehradun, Noida, Moradabad</p>
+        <p>📧 info@dashskilledutrain.com</p>
+        <p>📞 +91 5644-225096 | +91 9829034933</p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+      <p style="color: #aaa;">© All Right Reserved. Designed & Developed By</p>
+
+      <!-- Vishal Rajput Name with 3D Effect -->
+      <h2 style="
+        color: #f7c948;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 #000, 2px 2px 0 #4CAF50, 3px 3px 5px rgba(0,0,0,0.3);
+        margin-top: 10px;
+      ">
+        Vishal Rajput
+      </h2>
+    </div>
+  </section>
+
+</body>
+</html>

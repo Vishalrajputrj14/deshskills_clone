@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Programs - DASH Infotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header & Navbar */
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #90ee90;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 5px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #90ee90;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 35px;
+    }
+
+    .dropdown-content a {
+      color: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Career Programs Section */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      font-size: 26px;
+      color: #2e8b57;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #2e8b57;
+      color: white;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>DASH Infotech</h1>
+   <nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="dropdown">
+    <a href="#" class="active">Courses ▾</a>
+    <div class="dropdown-content">
+      <a href="short-term.html">Short Term</a>
+      <a href="career.html">Career</a>
+      <a href="university.html">University</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Verticals ▾</a>
+    <div class="dropdown-content">
+      <a href="disha-foundation.html">Disha Foundation</a>
+      <a href="aryan-technology.html">Aryan Technology</a>
+      <a href="Dash Skill Edutrain.html">Dash Skill Edutrain</a>
+    </div>
+  </div>
+
+  <a href="placement.html">Placement</a>
+  <a href="contact.html">Contact</a>
+  <a href="downloads.html">Downloads</a>
+</nav>
+
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Courses We Provide - Career Programs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Program Name</th>
+          <th>Course Content</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Designing</td>
+          <td>HTML5, CSS3, JavaScript, Bootstrap4, Photoshop, CorelDRAW, DreamWeaver, Project Building</td>
+          <td>6 Months</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>HTML5, CSS3, JavaScript, Bootstrap4, jQuery, PHP, MySQL, Project Building</td>
+          <td>8 Months</td>
+        </tr>
+        <tr>
+          <td>Android Development</td>
+          <td>Java Fundamentals, OOPs Programming in Java, Android App Development</td>
+          <td>5 Months</td>
+        </tr>
+        <tr>
+          <td>Smart Pro: MIS</td>
+          <td>Office Automation, Financial Analysis using MS Excel, Advanced Presentations, MS Access, Web Tools</td>
+          <td>6 Months</td>
+        </tr>
+        <tr>
+          <td>Smart Pro: MIS Advanced</td>
+          <td>All from MIS + VBA, Programming Principles, Computerized Accounting with GST</td>
+          <td>12 Months</td>
+        </tr>
+        <tr>
+          <td>Digital Marketing</td>
+          <td>HTML5, CSS3, JS, SEO, Social Media, Google Ads, Web Analytics</td>
+          <td>10 Months</td>
+        </tr>
+        <tr>
+          <td>E-Commerce</td>
+          <td>HTML5, CSS3, JavaScript, MySQL, PHP, Drupal, Magento</td>
+          <td>10 Months</td>
+        </tr>
+        <tr>
+          <td>Big Data</td>
+          <td>Intro to Big Data, Python, R for Data Science, Hadoop Basics</td>
+          <td>10 Months</td>
+        </tr>
+        <tr>
+          <td>App Development with .Net</td>
+          <td>C#, ASP.Net, SQL, Project Building</td>
+          <td>8 Months</td>
+        </tr>
+        <tr>
+          <td>App Development with Java</td>
+          <td>Java, OOPs, SQL, Project Work</td>
+          <td>8 Months</td>
+        </tr>
+        <tr>
+          <td>App Development with Open Source</td>
+          <td>PHP, MySQL, OOPs, Project Work</td>
+          <td>8 Months</td>
+        </tr>
+        <tr>
+          <td>Advanced Accounting with GST</td>
+          <td>Excel, Tally, GST Law, MS PowerPoint, Taxation</td>
+          <td>12 Months</td>
+        </tr>
+        <tr>
+          <td>O Level (NIELIT)</td>
+          <td>IT Tools, Web Designing, Python, IoT, Project</td>
+          <td>12 Months</td>
+        </tr>
+        <tr>
+          <td>A Level (NIELIT)</td>
+          <td>
+            <strong>Semester 1:</strong> IT Tools, Web Designing, OS, Data Structures<br>
+            <strong>Semester 2:</strong> Python, IoT, PHP, DBMS, Mini Project<br>
+            <strong>Semester 3:</strong> SAD, Data Science using Python, Major Project
+          </td>
+          <td>30 Months</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <section style="background-color: #1e1e1e; color: #ccc; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+      <!-- INFORMATION -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">INFORMATION</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Downloads</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Placement</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- USEFUL LINKS -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">USEFUL LINKS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Computer Trainings</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Experience & Association</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Events & Activities</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Partners & Associates</a></li>
+        </ul>
+      </div>
+
+      <!-- HEAD OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">REGD & HEAD OFFICE</h3>
+        <p>168 – Krishna Nagar, Bharatpur<br>Pin: 321001, Rajasthan (India)</p>
+      </div>
+
+      <!-- CORP OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">CORP. OFFICE</h3>
+        <p>Bajrang Bihar Colony,<br>Kali Bagichi, Bharatpur</p>
+      </div>
+
+      <!-- BRANCH OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">BRANCH OFFICE</h3>
+        <p>Jaipur, Dehradun, Noida, Moradabad</p>
+        <p>📧 info@dashskilledutrain.com</p>
+        <p>📞 +91 5644-225096 | +91 9829034933</p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+      <p style="color: #aaa;">© All Right Reserved. Designed & Developed By</p>
+
+      <!-- Vishal Rajput Name with 3D Effect -->
+      <h2 style="
+        color: #f7c948;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 #000, 2px 2px 0 #4CAF50, 3px 3px 5px rgba(0,0,0,0.3);
+        margin-top: 10px;
+      ">
+        Vishal Rajput
+      </h2>
+    </div>
+  </section>
+</body>
+</html>
+
+
+</body>
+</html>

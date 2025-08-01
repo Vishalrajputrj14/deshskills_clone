@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>RKCL Admissions - DASH Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #005bbb;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 180px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: #005bbb;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .info-box, .about-dash, .rkcl-mission {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-left: 5px solid #005bbb;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    .about-dash {
+      background: #e2e6ea;
+    }
+
+    .rkcl-mission {
+      background: #f1f5f9;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: #005bbb;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background: #005bbb;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #003f8c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">DASH InfoTech</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Courses ▾</a>
+        <div class="dropdown-content">
+          <a href="short-term.html">short-term</a>
+          <a href="career.html">career</a>
+          <a href="university.html">university  </a>
+        </div>
+      </div>
+      <a href="#">RS-CIT Updates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="info-box">
+      <h2>📢 प्रवेश सूचना</h2>
+      <p>RS-CIT जून बैच हेतु प्रवेश लिंक प्रारंभ हो चुके हैं।</p>
+      <p>👉 लिंक <strong>MYRKCL</strong> एवं <strong>RKCL.IN</strong> पर उपलब्ध है।</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💡 RS-CIT@HOME Updates</h2>
+      <p>RS-CIT@HOME तथा मई बैच हेतु अन्य प्रोत्साहन योजना के अपडेट के लिए <strong>MYRKCL</strong> में अपना message box देखें।</p>
+    </section>
+
+    <section class="info-box">
+      <h2>🔗 Online Admission Info</h2>
+      <p>प्रवेश हेतु लिंक <strong>MYRKCL</strong> तथा Online Admission Enquiry लिंक <strong>RKCL.IN</strong> पर उपलब्ध हैं।</p>
+    </section>
+
+    <section class="about-dash">
+      <h2>👨‍🏫 About DASH InfoTech</h2>
+      <p>DASH InfoTech is an <strong>Authorized Service Provider (SP)</strong> of Rajasthan Knowledge Corporation Ltd. (RKCL), Govt. of Rajasthan.</p>
+      <p>We support more than <strong>165+ training centers</strong> across <strong>Bharatpur, Alwar, Dhaulpur, Karauli & Dausa</strong> districts, facilitating implementation of computer courses and government-sponsored IT programs.</p>
+    </section>
+
+    <section class="about-dash">
+      <h2>📚 About RKCL</h2>
+      <p>RKCL (Rajasthan Knowledge Corporation Limited) is a Public Limited Company formed as a joint venture of:</p>
+      <ul>
+        <li>Government of Rajasthan</li>
+        <li>University of Rajasthan, Jaipur</li>
+        <li>Maharana Pratap University of Agriculture & Technology, Udaipur</li>
+        <li>Vardhaman Mahaveer Open University, Kota</li>
+        <li>RajComp Info Services Ltd.</li>
+        <li>Centre for e-Governance</li>
+      </ul>
+      <p>The main objective is to promote IT-enabled education, improve digital literacy and connectivity, and implement high-quality educational frameworks across Rajasthan. RKCL bridges coordination between students, institutions, and the government with financial & academic support systems.</p>
+    </section>
+
+    <section class="rkcl-mission">
+      <h2>🎯 Our Objective</h2>
+      <p>
+        DASH InfoTech aims to develop a new educational framework for IT skills in the 21st century in Rajasthan.
+        The mission is to enhance connectivity, promote IT-enabled programs, improve computer skills, and boost coordination among institutions, universities, students, and the government.
+        It also seeks institutional and financial support for present and future programs.
+      </p>
+      <div class="button-group">
+        <a href="#" class="btn">RKCL Support System</a>
+        <a href="#" class="btn">Channel Partner Login</a>
+        <a href="#" class="btn">RSCIT RESULTS</a>
+        <a href="#" class="btn">iLearn</a>
+      </div>
+    </section>
+  </main>
+<section style="background-color: #1e1e1e; color: #ccc; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+      <!-- INFORMATION -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">INFORMATION</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Downloads</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Placement</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- USEFUL LINKS -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">USEFUL LINKS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Computer Trainings</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Experience & Association</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Events & Activities</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Partners & Associates</a></li>
+        </ul>
+      </div>
+
+      <!-- HEAD OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">REGD & HEAD OFFICE</h3>
+        <p>168 – Krishna Nagar, Bharatpur<br>Pin: 321001, Rajasthan (India)</p>
+      </div>
+
+      <!-- CORP OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">CORP. OFFICE</h3>
+        <p>Bajrang Bihar Colony,<br>Kali Bagichi, Bharatpur</p>
+      </div>
+
+      <!-- BRANCH OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">BRANCH OFFICE</h3>
+        <p>Jaipur, Dehradun, Noida, Moradabad</p>
+        <p>📧 info@dashskilledutrain.com</p>
+        <p>📞 +91 5644-225096 | +91 9829034933</p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+      <p style="color: #aaa;">© All Right Reserved. Designed & Developed By</p>
+
+      <!-- Vishal Rajput Name with 3D Effect -->
+      <h2 style="
+        color: #f7c948;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 #000, 2px 2px 0 #4CAF50, 3px 3px 5px rgba(0,0,0,0.3);
+        margin-top: 10px;
+      ">
+        Vishal Rajput
+      </h2>
+    </div>
+  </section>
+
+</body>
+</html>

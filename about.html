@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - DASH Infotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #90ee90;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #90ee90;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      background-color: #e0f4e0;
+      padding: 10px 40px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .breadcrumb span a {
+      color: #6f4e37;
+      text-decoration: none;
+    }
+
+    .breadcrumb span a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    .about-container {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .about-container h2 {
+      font-size: 28px;
+      color: #2e8b57;
+      margin-bottom: 20px;
+    }
+
+    .about-container h3 {
+      margin-top: 30px;
+      color: #333;
+      font-size: 22px;
+    }
+
+    .about-container p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .about-container ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .about-container li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #2e8b57;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+    .breadcrumb {
+  background-color: #e0f4e0;
+  padding: 20px 40px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
+}
+
+.breadcrumb span a {
+  color: #6f4e37;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.breadcrumb span a:hover {
+  text-decoration: underline;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      background-color: #030c16;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: #010509;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #010408;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #000101;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #020c16;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+    <h1>DASH Infotech</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      
+      <div class="dropdown">
+        <a href="#">Courses ▾</a>
+        <div class="dropdown-content">
+          <a href="short-term.html">Short Term</a>
+          <a href="career.html">Career</a>
+          <a href="university.html">University</a>
+        </div>
+      </div>
+
+      <a href="verticals.html">Verticals</a>
+      <a href="placement.html">Placement</a>
+      <a href="contact.html">Contact</a>
+      <a href="downloads.html">Downloads</a>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+ <!-- Breadcrumb -->
+<div class="breadcrumb">
+  <strong>About Us</strong> &nbsp;&rarr;&nbsp;
+  <span><a href="index.html">HOME</a> / <a href="about.html">About</a></span>
+</div>
+
+
+  <!-- About Content -->
+  <section class="about-container">
+    <h2>About DASH Infotech</h2>
+    <p>DASH Infotech is a premier institution working in the field of training and education for almost two decades. We aim to build technology-based alliances that empower youth for their career growth and development.</p>
+
+    <p>We collaborate with private, government, and corporate agencies to offer short-term and vocational skill training programs. DASH Infotech has a strong presence in Rajasthan, Uttar Pradesh, and parts of Uttarakhand through its network of own and partner centers operating in Bharatpur, Karoli, Dholpur, Udaipur, Jaipur, Bijnor, Moradabad, and Dehradun.</p>
+
+    <p><span class="highlight">Incorporated:</span> 1997 (Partnership firm) |
+       <span class="highlight">Key Functionary:</span> Dinesh Kumar</p>
+
+    <h3>Key Highlights:</h3>
+    <ul>
+      <li>Authorized Service Provider (SP) of <strong>RKCL</strong> for Bharatpur District to facilitate more than 160 training centers.</li>
+      <li>Authorized Partner Institute (PI) of <strong>NIESBUD</strong>, Ministry of Skill Development & Entrepreneurship, Govt. of India.</li>
+      <li>Successfully completed <strong>Social Economic Caste Census 2011</strong> in districts of Rajasthan and UP.</li>
+      <li>Authorized Assessor with <strong>RSLDC</strong> in districts like Bharatpur, Karoli, and Sawai Madhopur.</li>
+    </ul>
+
+    <h3>Collaborating Organizations:</h3>
+    <p><strong>RSLDC</strong> – One of the most successful state missions for skill development in India.</p>
+    <p><strong>RKCL</strong> – A respected organization for implementing IT skilling networks in Rajasthan.</p>
+
+    <h3>Future Course of Action:</h3>
+    <ul>
+      <li>Skill & vocational training in collaboration with Govt/Private agencies.</li>
+      <li>Focus on unemployed youth and dropout candidates.</li>
+      <li>Women-centered government-sponsored training schemes.</li>
+      <li>Social activities with DISHA Foundation & NGOs.</li>
+      <li>Special program for 200 disabled candidates using custom “JAWS” software.</li>
+      <li>E-governance project execution.</li>
+      <li>Start-up ecosystem development for students' business ideas.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+    <!-- Footer -->
+  <section style="background-color: #1e1e1e; color: #ccc; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+      <!-- INFORMATION -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">INFORMATION</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Downloads</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Placement</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- USEFUL LINKS -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">USEFUL LINKS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Computer Trainings</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Experience & Association</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Events & Activities</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Partners & Associates</a></li>
+        </ul>
+      </div>
+
+      <!-- HEAD OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">REGD & HEAD OFFICE</h3>
+        <p>168 – Krishna Nagar, Bharatpur<br>Pin: 321001, Rajasthan (India)</p>
+      </div>
+
+      <!-- CORP OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">CORP. OFFICE</h3>
+        <p>Bajrang Bihar Colony,<br>Kali Bagichi, Bharatpur</p>
+      </div>
+
+      <!-- BRANCH OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">BRANCH OFFICE</h3>
+        <p>Jaipur, Dehradun, Noida, Moradabad</p>
+        <p>📧 info@dashskilledutrain.com</p>
+        <p>📞 +91 5644-225096 | +91 9829034933</p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+      <p style="color: #aaa;">© All Right Reserved. Designed & Developed By</p>
+
+      <!-- Vishal Rajput Name with 3D Effect -->
+      <h2 style="
+        color: #f7c948;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 #000, 2px 2px 0 #4CAF50, 3px 3px 5px rgba(0,0,0,0.3);
+        margin-top: 10px;
+      ">
+        Vishal Rajput
+      </h2>
+    </div>
+  </section>
+</body>
+</html>
+
+
+</body>
+</html>

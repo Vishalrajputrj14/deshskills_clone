@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DASH Infotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: #2e7d32;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+      padding: 8px 10px;
+    }
+
+    nav a:hover {
+      background-color: #1b5e20;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2e7d32;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #1b5e20;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        width: 100%;
+      }
+    }
+
+    /* Course Section Styling */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #2e7d32;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #1b5e20;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">DASH Infotech</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="#">Courses ▾</a>
+        <div class="dropdown-content">
+          <a href="short-term.html">Short Term</a>
+          <a href="career.html">Career</a>
+          <a href="university.html">University</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Verticals ▾</a>
+        <div class="dropdown-content">
+          <a href="disha-foundation.html">Disha Foundation</a>
+          <a href="aryan-technology.html">Aryan Technology</a>
+          <a href="Dash Skill Edutrain.html">Dash Skill Edutrain</a>
+        </div>
+      </div>
+
+      <a href="placement.html">Placement</a>
+      <a href="contact.html">Contact</a>
+      <a href="downloads.html">Downloads</a>
+    </nav>
+  </header>
+
+  <!-- Courses Section -->
+  <div class="container">
+    <h2>Courses We Provide</h2>
+
+    <h3>University Programs</h3>
+
+    <h4>Graduation</h4>
+    <ul>
+      <li>Bachelor of Arts (B.A.)</li>
+      <li>Bachelor of Commerce (B.Com.)</li>
+      <li>Bachelor of Science (B.Sc.)</li>
+      <li>Bachelor of Computer Applications (BCA)</li>
+      <li>Bachelor of Business Administration (BBA)</li>
+    </ul>
+
+    <h4>Post Graduation</h4>
+    <ul>
+      <li>Master of Arts (M.A.)</li>
+      <li>Master of Commerce (M.Com.)</li>
+      <li>Master of Science (M.Sc.)</li>
+      <li>Master of Computer Applications (MCA)</li>
+      <li>Master of Business Administration (MBA)</li>
+    </ul>
+  </div>
+   <section style="background-color: #1e1e1e; color: #ccc; padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+      <!-- INFORMATION -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">INFORMATION</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Downloads</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Placement</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- USEFUL LINKS -->
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">USEFUL LINKS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Computer Trainings</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Experience & Association</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Events & Activities</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Partners & Associates</a></li>
+        </ul>
+      </div>
+
+      <!-- HEAD OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">REGD & HEAD OFFICE</h3>
+        <p>168 – Krishna Nagar, Bharatpur<br>Pin: 321001, Rajasthan (India)</p>
+      </div>
+
+      <!-- CORP OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">CORP. OFFICE</h3>
+        <p>Bajrang Bihar Colony,<br>Kali Bagichi, Bharatpur</p>
+      </div>
+
+      <!-- BRANCH OFFICE -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 20px; color: #f7c948;">BRANCH OFFICE</h3>
+        <p>Jaipur, Dehradun, Noida, Moradabad</p>
+        <p>📧 info@dashskilledutrain.com</p>
+        <p>📞 +91 5644-225096 | +91 9829034933</p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+      <p style="color: #aaa;">© All Right Reserved. Designed & Developed By</p>
+
+      <!-- Vishal Rajput Name with 3D Effect -->
+      <h2 style="
+        color: #f7c948;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 #000, 2px 2px 0 #4CAF50, 3px 3px 5px rgba(0,0,0,0.3);
+        margin-top: 10px;
+      ">
+        Vishal Rajput
+      </h2>
+    </div>
+  </section>
+
+</body>
+</html>
